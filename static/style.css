@@ -1,0 +1,90 @@
+/* Base body style */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #E6E6FA, #DBB2D1); /* two-shaded background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navbar style */
+nav {
+    background-color: #813098; /* main Aaja-ish color */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffebee; /* light shade on hover */
+}
+
+/* Headings */
+h1, h2 {
+    color: #444;
+    margin-top: 30px;
+}
+
+/* Paragraphs */
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+button {
+    background-color: #2f337c; /* darker shade of main color */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff1c4b; /* even darker shade on hover */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
