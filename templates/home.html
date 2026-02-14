@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crochet Creations - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/services">Services</a>
+    <a href="/contact">Contact</a>
+</nav>
+
+<h1>Welcome to Crochet Creations 🧶</h1>
+<p><b>Beautiful handmade crochet products crafted with care and love 💕.</b></p>
+
+<a href="/services">
+    <button>View Our Services</button>
+</a>
+
+<h2>Our Products</h2>
+
+<div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+    <img src="{{ url_for('static', filename='images/product1.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product2.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product3.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product4.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product5.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product6.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product7.jpg') }}" width="250">
+    <img src="{{ url_for('static', filename='images/product8.jpg') }}" width="250">
+</div>
+
+
+</body>
+</html>
