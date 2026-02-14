@@ -2,17 +2,25 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
+# ----------------- ROUTES -----------------
+
+@app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template('home.html')
 
-@app.route("/about")
+@app.route('/about')
 def about():
-    return render_template("about.html")
+    return render_template('about.html')
 
-@app.route("/services")
+@app.route('/services')
 def services():
-    return render_template("services.html")
+    return render_template('services.html')
 
-if __name__ == "__main__":
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')  # simple info page, no form
+
+# --------------- RUN SERVER ---------------
+
+if __name__ == '__main__':
     app.run(debug=True)
